@@ -1,11 +1,13 @@
+
+# Deployment: Run with 'streamlit run app.py' in your terminal
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns   
 
-# Load data
 
-df = pd.read_csv('metadata.csv', parse_dates=['publication_date'])
+# Load data
+df = pd.read_csv('covid_metadata.csv', parse_dates=['publication_date'])
 
 st.title("COVID-19 Data Explorer")
 
